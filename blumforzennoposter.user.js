@@ -475,23 +475,6 @@ try {
 		const inputContainer = document.createElement('div');
 		inputContainer.className = 'setting-input';
 
-		function AutoClaimAndStart() {
-			setInterval(() => {
-				const claimButton = document.querySelector('button.kit-button.is-large.is-drop.is-fill.button.is-done');
-				const startFarmingButton = document.querySelector('button.kit-button.is-large.is-primary.is-fill.button');
-				const continueButton = document.querySelector('button.kit-button.is-large.is-primary.is-fill.btn');
-				if (claimButton) {
-					claimButton.click();
-				} else if (startFarmingButton) {
-					startFarmingButton.click();
-				} else if (continueButton) {
-					continueButton.click();
-				}
-			}, Math.floor(Math.random() * 5000) + 5000);
-		}
-
-		AutoClaimAndStart();
-
 		let input;
 		if (type === 'checkbox') {
 			input = document.createElement('input');
