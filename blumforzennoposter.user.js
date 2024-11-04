@@ -12,8 +12,8 @@
 // ==/UserScript==
 
 let GAME_SETTINGS = {
-	minBombHits: 9,
-	minIceHits: 9,
+	minBombHits: 1,
+	minIceHits: 2,
 	flowerSkipPercentage: Math.floor(Math.random() * 5) + 5,
 	minDelayMs: 500,
 	maxDelayMs: 999,
